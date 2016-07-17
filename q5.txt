@@ -1,0 +1,2 @@
+mysql> INSERT into cnu2016_vtulsyan.orders VALUES (NULL, 122, 12358.1321, "2016-04-09 10:26:12", "Created");
+Query OK, 1 row affected (0.01 sec)
