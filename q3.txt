@@ -1,0 +1,130 @@
+mysql> select user.id, user.company_name, avg(order_product.selling_cost * order_product.quantity) as 'average_order_size' from order_product join cnu2016_vtulsyan.orders on order_product.order_id = cnu2016_vtulsyan.orders.oid join cnu2016_vtulsyan.user on cnu2016_vtulsyan.orders.uid = user.id group by cnu2016_vtulsyan.user.company_name, cnu2016_vtulsyan.user.id;
++-----+------------------------------------+--------------------+
+| id  | company_name                       | average_order_size |
++-----+------------------------------------+--------------------+
+| 125 |                                    |     13277.85000000 |
+|  48 | Alpha Cognac                       |     30523.64968271 |
+|  21 | American Souvenirs Inc             |     30668.87363630 |
+|  50 | Amica Models & Co.                 |     30642.22361109 |
+|  45 | ANG Resellers                      |     31180.04496222 |
+|  56 | Anna's Decorations, Ltd            |     30669.88140977 |
+| 110 | Anton Designs, Ltd.                |     30528.42750346 |
+|  37 | Asian Shopping Network, Co         |     30877.55105706 |
+|  79 | Asian Treasures, Inc.              |     31055.20416738 |
+|   1 | Atelier graphique                  |     30540.93844823 |
+| 111 | Australian Collectables, Ltd       |     30983.99793832 |
+|   3 | Australian Collectors, Co.         |     31016.28669759 |
+|  73 | Australian Gift Network, Co        |     30742.45373565 |
+|  52 | Auto Associés & Cie.               |     31168.55027771 |
+|  95 | Auto Canal+ Petit                  |     30735.07934629 |
+|  32 | Auto-Moto Classics Inc.            |     30839.43423125 |
+|  30 | AV Stores, Co.                     |     30951.58439659 |
+|   5 | Baane Mini Imports                 |     30747.27703896 |
+|  98 | Bavarian Collectables Imports, Co. |     30157.38280742 |
+|  60 | BG&E Collectables                  |     30910.97438227 |
+|   8 | Blauer See Auto, Co.               |     30703.50669214 |
+|  41 | Boards & Toys Co.                  |     30825.71680433 |
+|  77 | CAF Imports                        |     30879.30527167 |
+|  25 | Cambridge Collectables Co.         |     30654.23020323 |
+|  34 | Canadian Gift Exchange Network     |     30651.81774937 |
+|  76 | Classic Gift Ideas, Inc            |     30956.76693092 |
+|  99 | Classic Legends Inc.               |     30524.68831892 |
+|  31 | Clover Collections, Co.            |     30791.04483591 |
+|  46 | Collectable Mini Designs Co.       |     30686.35104172 |
+|  89 | Collectables For Less Inc.         |     31091.45038265 |
+|  69 | Corporate Gift Ideas Co.           |     30626.18518644 |
+| 107 | Corrida Auto Replicas, Ltd         |     30870.51534424 |
+|  75 | Cramer Spezialitäten, Ltd          |     31138.80211147 |
+|  92 | Cruz & Sons Co.                    |     30527.34104847 |
+|  23 | Daedalus Designs Imports           |     30635.50135254 |
+|  13 | Danish Wholesale Imports           |     30656.10004430 |
+|  64 | Der Hund Imports                   |     30569.75714836 |
+|  17 | Diecast Classics Inc.              |     31078.03878631 |
+| 121 | Diecast Collectables               |     30649.95400809 |
+| 120 | Double Decker Gift Stores, Ltd     |     30904.45152440 |
+|  70 | Down Under Souveniers, Inc         |     30811.68254676 |
+|  15 | Dragon Souveniers, Ltd.            |     30583.02124680 |
+|  40 | Enaco Distributors                 |     30463.35030666 |
+|  11 | Euro+ Shopping Channel             |     30018.39043757 |
+|  97 | Extreme Desk Decorations, Ltd      |     30273.18615633 |
+| 100 | Feuer Online Stores, Inc           |     30865.13437104 |
+|  55 | Franken Gifts, Co                  |     30811.94052463 |
+| 112 | Frau da Collezione                 |     30588.82752725 |
+| 109 | FunGiftIdeas.com                   |     30933.08411407 |
+|  26 | Gift Depot Inc.                    |     30553.95640989 |
+| 101 | Gift Ideas Corp.                   |     30474.12323755 |
+|  85 | Gifts4AllAges.com                  |     30363.17347439 |
+|  47 | giftsbymail.co.uk                  |     30707.88745853 |
+|  83 | GiftsForHim.com                    |     30771.93715166 |
+|  19 | Handji Gifts& Co                   |     30860.47517371 |
+|   7 | Havel & Zbyszek Co                 |     30702.30151050 |
+|  43 | Heintze Collectables               |     30484.69188190 |
+|  20 | Herkku Gifts                       |     31038.24258481 |
+| 117 | Iberia Gift Imports, Corp.         |     30331.41462805 |
+| 122 | Kelly's Gift Shop                  |     30578.98424314 |
+|  39 | King Kong Collectables, Co.        |     30803.26249789 |
+|  84 | Kommission Auto                    |     30456.40029371 |
+| 115 | Kremlin Collectables, Co.          |     30862.18457660 |
+|  93 | L'ordine Souveniers                |     30302.65904014 |
+|  24 | La Corne D'abondance, Co.          |     31557.59269536 |
+|   4 | La Rochelle Gifts                  |     30533.05356030 |
+|  10 | Land of Toys Inc.                  |     30638.46736538 |
+|  87 | Lisboa Souveniers, Inc             |     30617.15678054 |
+|  51 | Lyon Souveniers                    |     30696.56942729 |
+|  80 | Marseille Mini Autos               |     30447.43088127 |
+|  59 | Marta's Replicas Co.               |     30813.14696210 |
+|  78 | Men 'R' US Retailers, Ltd.         |     30389.96827322 |
+|  49 | Messner Shopping Network           |     30894.28885663 |
+| 106 | Microscale Inc.                    |     30778.04060979 |
+| 104 | Mini Auto Werke                    |     30882.97686385 |
+|  38 | Mini Caravy                        |     30933.64925285 |
+|  67 | Mini Classics                      |     30307.06767967 |
+|  68 | Mini Creations Ltd.                |     30808.42848861 |
+|   6 | Mini Gifts Distributors Ltd.       |     30415.01045351 |
+|   9 | Mini Wheels Co.                    |     30670.42991254 |
+| 114 | Mit Vergnügen & Co.                |     30630.55279376 |
+| 118 | Motor Mint Distributors Inc.       |     31077.03494686 |
+|  16 | Muscle Machine Inc                 |     30627.74084073 |
+|  42 | Natürlich Autos                    |     30594.62867978 |
+|  62 | Norway Gifts By Mail, Co.          |     30553.44571894 |
+|  86 | Online Diecast Creations Co.       |     30432.81645022 |
+|  35 | Online Mini Collectables           |     30802.15560074 |
+|  27 | Osaka Souveniers Co.               |     30482.94597806 |
+|  65 | Oulu Toy Supplies, Inc.            |     30740.26486990 |
+|  66 | Petit Auto                         |     30467.00391051 |
+|  22 | Porto Imports Co.                  |     30413.63439343 |
+|  88 | Precious Collectables              |     30898.75000865 |
+|  44 | Québec Home Shopping Network       |     30433.57182155 |
+| 116 | Raanan Stores, Inc                 |     30905.27356032 |
+|  81 | Reims Collectables                 |     30827.03708602 |
+|  57 | Rovelli Gifts                      |     31038.23188336 |
+|  54 | Royal Canadian Collectables, Ltd.  |     30581.04666185 |
+|  90 | Royale Belge                       |     30705.80099151 |
+|  91 | Salzburg Collectables              |     30965.43227427 |
+|  82 | SAR Distributors, Co               |     30281.70760375 |
+|  14 | Saveley & Henriot, Co.             |     30805.80739202 |
+| 102 | Scandinavian Gift Ideas            |     30242.95786726 |
+|  63 | Schuyler Imports                   |     30499.97566085 |
+| 119 | Signal Collectibles Ltd.           |     30792.16540785 |
+|   2 | Signal Gift Stores                 |     30473.37888646 |
+|  58 | Souveniers And Things Co.          |     30740.39505414 |
+|  96 | Stuttgart Collectable Exchange     |     30444.29331933 |
+|  71 | Stylish Desk Decors, Co.           |     30417.24068878 |
+|  74 | Suominen Souveniers                |     30874.97618315 |
+| 105 | Super Scale Inc.                   |     31097.82034956 |
+|  18 | Technics Stores Inc.               |     30642.66927688 |
+|  72 | Tekni Collectables Inc.            |     30821.94527086 |
+| 103 | The Sharp Gifts Warehouse          |     30557.73270616 |
+|  94 | Tokyo Collectables, Ltd            |     30933.11060107 |
+|  53 | Toms Spezialitäten, Ltd            |     30620.98917511 |
+|  29 | Toys of Finland, Co.               |     30352.39568745 |
+|  36 | Toys4GrownUps.com                  |     30579.07681147 |
+|  33 | UK Collectables, Ltd.              |     30749.26566166 |
+|  61 | Vida Sport, Ltd                    |     30859.97954597 |
+|  28 | Vitachrome Inc.                    |     30621.27381496 |
+|  12 | Volvo Model Replicas, Co           |     30977.62781374 |
+| 108 | Warburg Exchange                   |     30743.41160185 |
+| 113 | West Coast Collectables Co.        |     30981.39586376 |
++-----+------------------------------------+--------------------+
+With indexing: 123 rows in set (8.08 sec)
+Without indexing: 123 rows in set (8.42 sec)
