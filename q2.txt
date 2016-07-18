@@ -451,5 +451,5 @@ mysql> select cnu2016_vtulsyan.orders.timestamp, sum(order_product.selling_cost 
 | 2016-04-09 10:26:12 |  -128423.7600 |
 | 2016-07-13 11:24:40 |   -27397.7100 |
 +---------------------+---------------+
-1035483 rows in set (17.70 sec)
-1035483 rows in set (10.10 sec)
+Without indexing: 1035483 rows in set (17.70 sec)
+With indexing: 1035483 rows in set (10.10 sec)
