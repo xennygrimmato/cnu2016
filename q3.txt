@@ -126,5 +126,6 @@ mysql> select user.id, user.company_name, avg(order_product.selling_cost * order
 | 108 | Warburg Exchange                   |     30743.41160185 |
 | 113 | West Coast Collectables Co.        |     30981.39586376 |
 +-----+------------------------------------+--------------------+
-With indexing: 123 rows in set (8.08 sec)
+
 Without indexing: 123 rows in set (8.42 sec)
+With indexing: 123 rows in set (8.08 sec)
