@@ -1,0 +1,9 @@
+SourcePath, Start Line, End Line, Violation String
+org.eclipse.jetty.util.thread.SweeperTest$1.run,68,68,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.SweeperTest$3.run,104,104,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.TimerScheduler.doStart,64,64,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsumeTest.testBlockedInProduce,218,218,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsumeTest.testBlockedInProduce,247,247,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsumeTest.testExecuteWhileIdling,304,304,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsumeTest.testProduceOneBlockingTaskIdleByDispatch,142,142,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsumeTest.testProduceOneBlockingTaskIdleByTask,181,181,“Did you intend to put run() method in new thread?”
