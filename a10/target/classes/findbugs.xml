@@ -1,0 +1,10 @@
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
+                pluginid="Run_Inconsistency" provider="vtulsyan" website="http://codenation.co.in">
+
+    <Detector class="RunDetector" reports="THREAD_INCONSISTENCY"/>
+    <Detector class="RunnableDetector" reports="RUN_INCONSISTENCY"/>
+
+    <BugPattern type="RUN_INCONSISTENCY" abbrev="RI" category="CORRECTNESS"/>
+    <BugPattern type="THREAD_INCONSISTENCY" abbrev="TI" category="CORRECTNESS"/>
+
+</FindbugsPlugin>

@@ -1,0 +1,4 @@
+SourcePath, Start Line, End Line, Violation String
+org.eclipse.jetty.server.HttpChannel.handle,419,419,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpChannel.handle,429,429,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.util.thread.TimerScheduler.doStart,64,64,“Did you intend to put run() method in new thread?”

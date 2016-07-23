@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+
+    <Plugin>
+        <ShortDescription>FindBugs Plugin for Thread.run()</ShortDescription>
+        <Details>run() method for Runnable and Thread</Details>
+    </Plugin>
+
+    <Detector class="RunDetector">
+        <Details>
+            THREAD_INCONSISTENCY
+        </Details>
+    </Detector>
+
+    <Detector class="RunnableDetector">
+        <Details>
+            RUN_INCONSISTENCY
+        </Details>
+    </Detector>
+
+    <BugPattern type="RUN_INCONSISTENCY">
+        <ShortDescription>Runnable run() inconsistency</ShortDescription>
+        <LongDescription>“Did you intend to put run() method in new thread?”</LongDescription>
+        <Details>
+            “Did you intend to put run() method in new thread?”
+        </Details>
+    </BugPattern>
+
+    <BugPattern type="THREAD_INCONSISTENCY">
+        <ShortDescription>Thread run() inconsistency</ShortDescription>
+        <LongDescription>“Did you intend to use Thread.start() to create a new execution thread?”</LongDescription>
+        <Details>
+            “Did you intend to use Thread.start() to create a new execution thread?”
+        </Details>
+    </BugPattern>
+
+    <BugCode abbrev="RI">RUN_INCONSISTENCY</BugCode>
+    <BugCode abbrev="TI">THREAD_INCONSISTENCY</BugCode>
+</MessageCollection>

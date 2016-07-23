@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.5" timestamp="2016-07-23T14:32:55.487">
+<file name="/Users/vaibhavtulsyan/IdeaProjects/TestProject/src/main/java/ThreadTester.java">
+<violation beginline="23" endline="29" begincolumn="9" endcolumn="16" rule="DontCallThreadRun" ruleset="Basic" class="ThreadTester" method="test2" externalInfoUrl="https://pmd.github.io/pmd-5.3.5/pmd-java/rules/java/basic.html#DontCallThreadRun" priority="4">
+Dont call Thread.run() explicitly, use Thread.start()
+</violation>
+</file>
+</pmd>

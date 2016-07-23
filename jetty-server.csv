@@ -1,0 +1,35 @@
+SourcePath, Start Line, End Line, Violation String
+org.eclipse.jetty.server.HttpChannel.handle,419,419,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpChannel.handle,429,429,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncEOF,492,492,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncEmpty,414,414,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncError,569,569,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncError,582,582,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncRead,438,438,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncRead,452,452,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncReadEOF,516,516,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpInputTest.testAsyncReadEOF,531,531,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitBadBehaviourTest$SetHandledWriteSomeDataHandler.handle,119,119,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitBadBehaviourTest$SetHandledWriteSomeDataHandler.handle,119,119,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$DoesNotSetHandledHandler.handle,119,119,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$DoesNotSetHandledHandler.handle,119,119,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$ExplicitFlushHandler.handle,314,314,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$ExplicitFlushHandler.handle,314,314,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$OnlySetHandledHandler.handle,176,176,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$OnlySetHandledHandler.handle,176,176,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$OverflowHandler.handle,529,529,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$OverflowHandler.handle,529,529,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetContentLengthAndWriteMoreBytesHandler.handle,674,674,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetContentLengthAndWriteMoreBytesHandler.handle,674,674,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetContentLengthAndWriteThatAmountOfBytesHandler.handle,601,601,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetContentLengthAndWriteThatAmountOfBytesHandler.handle,601,601,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetHandledAndFlushWithoutContentHandler.handle,383,383,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetHandledAndFlushWithoutContentHandler.handle,383,383,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetHandledWriteSomeDataHandler.handle,242,242,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$SetHandledWriteSomeDataHandler.handle,242,242,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteAndSetContentLengthHandler.handle,742,742,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteAndSetContentLengthHandler.handle,742,742,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteAndSetContentLengthTooSmallHandler.handle,811,811,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteAndSetContentLengthTooSmallHandler.handle,811,811,“Did you intend to use Thread.start() to create a new execution thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteFlushWriteMoreHandler.handle,455,455,“Did you intend to put run() method in new thread?”
+org.eclipse.jetty.server.HttpManyWaysToAsyncCommitTest$WriteFlushWriteMoreHandler.handle,455,455,“Did you intend to use Thread.start() to create a new execution thread?”
